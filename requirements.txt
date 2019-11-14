@@ -1,0 +1,6 @@
+discord
+discord.py==1.2.4
+beautifulsoup4==4.6.0
+requests==2.20.0
+redis==3.2.1
+lxml==4.4.1
