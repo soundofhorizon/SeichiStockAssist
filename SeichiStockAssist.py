@@ -12,15 +12,19 @@ client = discord.Client()
 
 bot_token = os.environ["BOT_TOKEN"]
 
+
 @client.event
 async def on_ready():
     game = discord.Game(f"{client.get_guild(643397152357351424).member_count}人を監視中")
     await client.change_presence(status=discord.Status.online, activity=game)
 
-    ch = client.get_channel( 643461625663193098 )
-    embed = Embed( title='Start_up', description='Botが起動しました\n現在のバージョンは**0.0.1**です', color=0x43b581 )
-    embed.set_footer( text=datetime.now() )
-    await ch.send( embed=embed )
+    ch = client.get_channel(643461625663193098)
+    d = datetime.now()  # 現在時刻の取得
+    time = d.strftime("%Y/%m/%d %H:%M:%S")
+    embed = Embed(title='Start_up', description='Botが起動しました\n現在のバージョンは**0.0.1**です', color=0x43b581)
+    embed.set_footer(text=time)
+    await ch.send(embed=embed)
+
 
 @client.event  # 入ってきたときの処理
 async def on_member_join(member):
@@ -31,6 +35,7 @@ async def on_member_join(member):
     role = discord.utils.get(member.guild.roles, name="新人")
     await member.add_roles(role)
 
+
 @client.event  # 出た時の処理
 async def on_member_remove(member):
     if member.author.bot:
@@ -39,6 +44,7 @@ async def on_member_remove(member):
         return
     role = discord.utils.get(member.guild.roles, name="新人")
     await member.add_roles(role)
+
 
 @client.event
 async def on_message_delete(message):
@@ -60,6 +66,10 @@ async def on_message_delete(message):
 async def on_message_edit(before, after):
     # メッセージ送信者がBotだった場合は無視する
     if before.author.bot:
+        return
+
+    # URLの場合は無視する(URLの詳細がembedで表示されるときにeditを発火するため)
+    if before.content.startswith("http"):
         return
 
     d = datetime.now()  # 現在時刻の取得
@@ -98,19 +108,23 @@ async def on_message(message):
                         await message.add_reaction(random.choice(emoji))
                         CHANNEL_ID = 644182750215143424
                         channel = client.get_channel(CHANNEL_ID)
-                        color = [0x3efd73, 0xfb407c, 0xf3f915, 0xc60000, 0xed8f10, 0xeacf13, 0x9d9d9d, 0xebb652, 0x4259fb,
+                        color = [0x3efd73, 0xfb407c, 0xf3f915, 0xc60000, 0xed8f10, 0xeacf13, 0x9d9d9d, 0xebb652,
+                                 0x4259fb,
                                  0x1e90ff]
-                        embed = discord.Embed(description=f'{message.author.display_name}のMCIDの報告を確認したよ！',color=random.choice(color))
+                        embed = discord.Embed(description=f'{message.author.display_name}のMCIDの報告を確認したよ！',
+                                              color=random.choice(color))
                         embed.set_author(name=message.author, icon_url=message.author.avatar_url, )  # ユーザー名+ID,アバターをセット
                         await channel.send(embed=embed)
                     else:
                         embed = discord.Embed(
-                            description=f'{message.author} さん。\n入力されたMCIDは実在しないか、又はまだ一度も整地鯖にログインしていません。\n続けて間違った入力を行うと規定によりBANの対象になることがあります。',color=0xff0000)
+                            description=f'{message.author} さん。\n入力されたMCIDは実在しないか、又はまだ一度も整地鯖にログインしていません。\n続けて間違った入力を行うと規定によりBANの対象になることがあります。',
+                            color=0xff0000)
                         await message.channel.send(embed=embed)
                 except requests.exceptions.HTTPError:
                     await message.channel.send(f'requests.exceptions.HTTPError')
             else:
-                embed = discord.Embed(description="MCIDに使用できない文字が含まれています'\n続けて間違った入力を行うと規定によりBANの対象になることがあります。",color=0xff0000)
+                embed = discord.Embed(description="MCIDに使用できない文字が含まれています'\n続けて間違った入力を行うと規定によりBANの対象になることがあります。",
+                                      color=0xff0000)
                 await message.channel.send(embed=embed)
 
         if message.content == '!version':
@@ -132,9 +146,12 @@ async def on_message(message):
 
     except:
         error_message = f'```{traceback.format_exc()}```'
-        ch = message.guild.get_channel( 643461625663193098 )
-        embed = Embed( title='Error_log', description=error_message, color=0xf04747 )
-        embed.set_footer( text=f'channel:{message.channel}\ntime:{datetime.now()}' )
-        await ch.send( embed=embed )
+        ch = message.guild.get_channel(643461625663193098)
+        d = datetime.now()  # 現在時刻の取得
+        time = d.strftime("%Y/%m/%d %H:%M:%S")
+        embed = Embed(title='Error_log', description=error_message, color=0xf04747)
+        embed.set_footer(text=f'channel:{message.channel}\ntime:{time}')
+        await ch.send(embed=embed)
+
 
 client.run(bot_token)
