@@ -1,12 +1,24 @@
 import random
 import re
 import os
-from datetime import datetime, timedelta
+from datetime import datetime
 import bs4
 import discord
 import requests
 from discord import Embed
 import traceback
+import redis
+
+client = discord.Client()
+
+# Redisに接続
+pool = redis.ConnectionPool.from_url(
+    url=os.environ['REDIS_URL'],
+    db=0,
+    decode_responses=True
+)
+
+rc = redis.StrictRedis(connection_pool=pool)
 
 client = discord.Client()
 
