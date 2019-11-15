@@ -9,8 +9,6 @@ from discord import Embed
 import traceback
 import redis
 
-client = discord.Client()
-
 # Redisに接続
 pool = redis.ConnectionPool.from_url(
     url=os.environ['REDIS_URL'],
