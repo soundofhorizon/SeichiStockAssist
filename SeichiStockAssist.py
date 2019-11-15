@@ -98,6 +98,9 @@ async def on_message_edit(before, after):
 
 @client.event  # point付与の術
 async def on_message(message):
+    if message.author.bot:
+        return
+
     try:
         # MCID_check
         if message.channel.id == 644182486368124939:
@@ -121,8 +124,7 @@ async def on_message(message):
                         CHANNEL_ID = 644182750215143424
                         channel = client.get_channel(CHANNEL_ID)
                         color = [0x3efd73, 0xfb407c, 0xf3f915, 0xc60000, 0xed8f10, 0xeacf13, 0x9d9d9d, 0xebb652,
-                                 0x4259fb,
-                                 0x1e90ff]
+                                 0x4259fb, 0x1e90ff]
                         embed = discord.Embed(description=f'{message.author.display_name}のMCIDの報告を確認したよ！',
                                               color=random.choice(color))
                         embed.set_author(name=message.author, icon_url=message.author.avatar_url, )  # ユーザー名+ID,アバターをセット
