@@ -149,11 +149,10 @@ async def on_message(message):
             SIINA_value = sympy.Symbol('SIINA_value')
             M_value = sympy.Symbol('M_value')  # Mは〔MAGNIFICATION(倍率)〕の略
             expr_SIINA = (SIINA_value * M_value) ** 0.7
-
+            value = int(expr_SIINA.subs([(SIINA_value, 100), (M_value, 1.2)]))  # ここで数値の代入を行う。辞書型が使える。
             embed = discord.Embed(title='value_view',
-                                  description=f'椎名の現在の価値は{expr_SIINA.subs([(SIINA_value, 100),(M_value,1.2)])}',
+                                  description=f'椎名の現在の価値は{value}です。',
                                   color=0xadff2f)
-            embed.set_author(name=message.author, icon_url=message.author.avatar_url, )  # ユーザー名+ID,アバターをセット
             await channel.send(embed=embed)
 
         # メッセージ削除
