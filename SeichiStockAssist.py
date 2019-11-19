@@ -8,6 +8,7 @@ import requests
 from discord import Embed
 import traceback
 import redis
+import sympy
 
 # Redisに接続
 pool = redis.ConnectionPool.from_url(
@@ -139,9 +140,21 @@ async def on_message(message):
                                       color=0xff0000)
                 await message.channel.send(embed=embed)
 
-        if message.content == '!version':
-            embed = discord.Embed(description="現在のバージョンは**0.0.1**です\nNow version **0.0.1** working.", color=0x4259fb)
-            await message.channel.send(embed=embed)
+        # 椎名の現在の価値を表示するための関数を策定するの巻
+
+        if message.content.startswith('!showValue'):
+            channel = client.get_channel(643461625663193098)
+            # sympyを用いてみる。変数を定義したら後は方程式などが作れる。代入も可能。計算してくれるので使いやすいのでは？
+            # 策定事項：sympyの方程式を定義する際は「expr_(変数名)」を用いる。変数には_valueを語尾につけてみる。(変更してもよい)
+            SIINA_value = sympy.Symbol('SIINA_value')
+            M_value = sympy.Symbol('M_value')  # Mは〔MAGNIFICATION(倍率)〕の略
+            expr_SIINA = (SIINA_value * M_value) ** 0.7
+
+            embed = discord.Embed(title='value_view',
+                                  description=f'椎名の現在の価値は{expr_SIINA.subs([(SIINA_value, 100),(M_value,1.2)])}',
+                                  color=0xadff2f)
+            embed.set_author(name=message.author, icon_url=message.author.avatar_url, )  # ユーザー名+ID,アバターをセット
+            await channel.send(embed=embed)
 
         # メッセージ削除
         if message.content.startswith('!del '):
