@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0e7daa25-66e6-4299-831a-8b1e78fef8b0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/SeichiStockAssist.py" beforeDir="false" afterPath="$PROJECT_DIR$/SeichiStockAssist.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -57,7 +57,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573779753428</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="[ADD]Redisの初期設定。(Heroku Redisを使用可能にしています)">
+      <created>1574171380347</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1574171380347</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
