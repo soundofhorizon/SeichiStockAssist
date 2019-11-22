@@ -79,8 +79,8 @@ async def on_message_edit(before, after):
     if before.author.bot:
         return
 
-    # URLの場合は無視する(URLの詳細がembedで表示されるときにeditを発火するため)
-    if before.content.startswith("http"):
+    # URLが文中に含まれる場合は無視する(URLの詳細がembedで表示されるときにeditを発火するため)
+    if "http" in before.content:
         return
 
     d = datetime.now()  # 現在時刻の取得

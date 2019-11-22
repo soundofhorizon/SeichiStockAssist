@@ -72,7 +72,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574172023216</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="[FIX]M_valueを変化させることで椎名の価値を変化させるようにする。Debugとして!showValue 数字　で倍率を定められるコマンドを実装">
+      <created>1574428707234</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1574428707235</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -92,6 +99,7 @@
     <MESSAGE value="[FIX]URLのeditを無視&amp;時間のフォーマットを何とかする" />
     <MESSAGE value="[ADD]Redisの初期設定。(Heroku Redisを使用可能にしています)" />
     <MESSAGE value="[FIX]requirement.txtにsumpyを追加する。" />
-    <option name="LAST_COMMIT_MESSAGE" value="[FIX]requirement.txtにsumpyを追加する。" />
+    <MESSAGE value="[FIX]M_valueを変化させることで椎名の価値を変化させるようにする。Debugとして!showValue 数字　で倍率を定められるコマンドを実装" />
+    <option name="LAST_COMMIT_MESSAGE" value="[FIX]M_valueを変化させることで椎名の価値を変化させるようにする。Debugとして!showValue 数字　で倍率を定められるコマンドを実装" />
   </component>
 </project>
