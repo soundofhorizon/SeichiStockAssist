@@ -16,7 +16,7 @@ class GraphCog(commands.Cog):
         plt.plot(x, y, color='green')
         plt.savefig('/tmp/graph.png')  # 一時ファイルに相当するので必ずtmpディレクトリに保存する
         with open('/tmp/graph.png', 'rb') as f:
-            await ctx.send_file(f)
+            await ctx.send_file(ctx.channel, f)
 
 
 # このクラスをMainクラスで呼び出すとこの関数を呼び出す
