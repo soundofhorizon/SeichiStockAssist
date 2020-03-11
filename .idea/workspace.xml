@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0e7daa25-66e6-4299-831a-8b1e78fef8b0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/azureSettings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SeichiStockAssist.py" beforeDir="false" afterPath="$PROJECT_DIR$/SeichiStockAssist.py" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,17 +22,14 @@
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1TbwYnzWbGUQQlXO1xqy9HzDJJN" />
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -101,5 +99,11 @@
     <MESSAGE value="[FIX]requirement.txtにsumpyを追加する。" />
     <MESSAGE value="[FIX]M_valueを変化させることで椎名の価値を変化させるようにする。Debugとして!showValue 数字　で倍率を定められるコマンドを実装" />
     <option name="LAST_COMMIT_MESSAGE" value="[FIX]M_valueを変化させることで椎名の価値を変化させるようにする。Debugとして!showValue 数字　で倍率を定められるコマンドを実装" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="229" y="195" key="CommitChangelistDialog2" timestamp="1583927377509">
+      <screen x="0" y="0" width="1600" height="1200" />
+    </state>
+    <state x="229" y="195" key="CommitChangelistDialog2/0.0.1600.1200@0.0.1600.1200" timestamp="1583927377509" />
   </component>
 </project>

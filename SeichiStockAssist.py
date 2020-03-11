@@ -9,6 +9,8 @@ from discord import Embed
 import traceback
 import redis
 import sympy
+import matplotlib.pyplot as plt
+import numpy as np
 
 # Redisに接続
 pool = redis.ConnectionPool.from_url(
@@ -86,7 +88,7 @@ async def on_message_edit(before, after):
     d = datetime.now()  # 現在時刻の取得
     time = d.strftime("%Y/%m/%d %H:%M:%S")
     embed = Embed(
-        description=f'**Changed in <#{before.channel.id}>**\n\n**before**\n{before.content}\n\n**after**\n{after.content}\n\n',
+        description=f"**Changed in <#{before.channel.id}>**\n\n**before**\n{before.content}\n\n**after**\n{after.content}\n\n",
         color=0x1e90ff)  # 発言内容をdescriptionにセット
     embed.set_author(name=before.author, icon_url=before.author.avatar_url, )  # ユーザー名+ID,アバターをセット
     embed.set_footer(text=f'User ID：{before.author.id} Time：{time}',
@@ -130,7 +132,8 @@ async def on_message(message):
                         await channel.send(embed=embed)
                     else:
                         embed = discord.Embed(
-                            description=f'{message.author} さん。\n入力されたMCIDは実在しないか、又はまだ一度も整地鯖にログインしていません。\n続けて間違った入力を行うと規定によりBANの対象になることがあります。',
+                            description=f'{message.author} さん。\n入力されたMCIDは実在しないか、又はまだ一度も整地鯖にログインしていません。\n'
+                                        f'続けて間違った入力を行うと規定によりBANの対象になることがあります。',
                             color=0xff0000)
                         await message.channel.send(embed=embed)
                 except requests.exceptions.HTTPError:
@@ -146,17 +149,23 @@ async def on_message(message):
             channel = client.get_channel(643461625663193098)
             # sympyを用いてみる。変数を定義したら後は方程式などが作れる。代入も可能。計算してくれるので使いやすいのでは？
             # 策定事項：sympyの方程式を定義する際は「expr_(変数名)」を用いる。変数には_valueを語尾につけてみる。(変更してもよい)
-            SIINA_value = sympy.Symbol('SIINA_value') #椎名の絶対的価値を定める
-            #M_value = sympy.Symbol('M_value')  # Mは〔MAGNIFICATION(倍率)〕の略。今回はここに椎名の個数を入れる
+            SIINA_value = sympy.Symbol('SIINA_value')  # 椎名の絶対的価値を定める
+            # M_value = sympy.Symbol('M_value')  # Mは〔MAGNIFICATION(倍率)〕の略。今回はここに椎名の個数を入れる
             msg = f'{message.content}'.replace('!showValue ', '')
             M_value = int(msg)
-            if M_value >= 0:#倍率が-になることは考慮しない
-                expr_SIINA = SIINA_value + (0.1 * M_value + sympy.sin(M_value)*sympy.cos(M_value ** 2)) ** 2
+            if M_value >= 0:  # 倍率が-になることは考慮しない
+                expr_SIINA = SIINA_value + (0.1 * M_value + sympy.sin(M_value) * sympy.cos(M_value ** 2)) ** 2
                 value = int(expr_SIINA.subs([(SIINA_value, 100), (M_value, 1.2)]))  # ここで数値の代入を行う。辞書型が使える。
                 embed = discord.Embed(title='value_view',
                                       description=f'椎名の現在の価値は{value}です。',
                                       color=0xadff2f)
                 await channel.send(embed=embed)
+
+        if message.content.startswith("!graph"):
+            x = np.linspace(0, 100, 1000)
+            y = (1 / 3) * x
+            plt.plot(x, y, color="green")
+            message.channel.send(plt.show())
 
         # メッセージ削除
         if message.content.startswith('!del '):
@@ -170,7 +179,6 @@ async def on_message(message):
                     await message.channel.send(embed=embed)
             else:
                 await message.channel.send("そのコマンドは管理者以外は使用できません。")
-
     except:
         error_message = f'```{traceback.format_exc()}```'
         ch = message.guild.get_channel(643461625663193098)
