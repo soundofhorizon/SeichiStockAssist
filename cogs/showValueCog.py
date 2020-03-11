@@ -29,6 +29,9 @@ class ShowValueCog(commands.Cog):
                                   color=0xadff2f)
             await ctx.send(embed=embed)
 
+    @ShowValue.error
+    def ShowValue_error(self, ctx, error):
+        await ctx.send(error+": \n\nエラー内容\n\n" + error.text)
 
 # このクラスをMainクラスで呼び出すとこの関数を呼び出す
 def setup(bot):

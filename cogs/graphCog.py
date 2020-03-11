@@ -18,6 +18,10 @@ class GraphCog(commands.Cog):
         with open('/tmp/graph.png', 'rb') as f:
             await ctx.send_file(ctx.channel, f)
 
+    @Graph.error
+    def Graph_error(self, ctx, error):
+        await ctx.send(error + ": \n\nエラー内容\n\n" + error.text)
+
 
 # このクラスをMainクラスで呼び出すとこの関数を呼び出す
 def setup(bot):
