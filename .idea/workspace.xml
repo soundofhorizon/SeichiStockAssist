@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0e7daa25-66e6-4299-831a-8b1e78fef8b0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cogs/logCog.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/logCog.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cogs/showValueCog.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/showValueCog.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cogs/graphCog.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/graphCog.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,10 +179,14 @@
     <option name="LAST_COMMIT_MESSAGE" value="[FIX]EventHanderの場合においてはtry-exceptでエラー対処" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="229" y="195" key="CommitChangelistDialog2" timestamp="1583944874163">
+    <state x="229" y="195" key="CommitChangelistDialog2" timestamp="1583960300966">
       <screen x="0" y="0" width="1600" height="1200" />
     </state>
-    <state x="229" y="195" key="CommitChangelistDialog2/0.0.1600.1200@0.0.1600.1200" timestamp="1583944874163" />
+    <state x="229" y="195" key="CommitChangelistDialog2/0.0.1600.1200@0.0.1600.1200" timestamp="1583960300966" />
+    <state x="474" y="425" key="com.intellij.ide.util.TipDialog" timestamp="1583959640769">
+      <screen x="0" y="0" width="1600" height="1200" />
+    </state>
+    <state x="474" y="425" key="com.intellij.ide.util.TipDialog/0.0.1600.1200@0.0.1600.1200" timestamp="1583959640769" />
     <state x="609" y="518" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1583930047233">
       <screen x="0" y="0" width="1600" height="1200" />
     </state>

@@ -10,11 +10,13 @@ class GraphCog(commands.Cog):
         self.bot = bot
 
     @commands.command(name="graph")  # ctxを渡しておかないと引数をnumに入れられない。
-    def showValue(self, ctx):
+    def Graph(self, ctx):
         x = np.linspace(0, 100, 1000)
         y = (1 / 3) * x
-        plt.plot(x, y, color="green")
-        ctx.channel.send(plt.show())
+        plt.plot(x, y, color='green')
+        plt.savefig('/tmp/graph.png')  # 一時ファイルに相当するので必ずtmpディレクトリに保存する
+        with open('/tmp/graph.png', 'rb') as f:
+            ctx.send_file(f)
 
 
 # このクラスをMainクラスで呼び出すとこの関数を呼び出す
