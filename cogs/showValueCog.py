@@ -27,11 +27,11 @@ class ShowValueCog(commands.Cog):
             embed = discord.Embed(title='value_view',
                                   description=f'椎名の現在の価値は{value}です。',
                                   color=0xadff2f)
-            await ctx.send(embed=embed)
+            await ctx.channel.send(embed=embed)
 
     @ShowValue.error
     def ShowValue_error(self, ctx, error):
-        await ctx.send(error+": \n\nエラー内容\n\n" + error.text)
+        await ctx.channel.send(error+": \n\nエラー内容\n\n" + error.text)
 
 # このクラスをMainクラスで呼び出すとこの関数を呼び出す
 def setup(bot):

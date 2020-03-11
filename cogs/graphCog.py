@@ -16,11 +16,11 @@ class GraphCog(commands.Cog):
         plt.plot(x, y, color='green')
         plt.savefig('/tmp/graph.png')  # 一時ファイルに相当するので必ずtmpディレクトリに保存する
         with open('/tmp/graph.png', 'rb') as f:
-            await ctx.send_file(ctx.channel, f)
+            await ctx.channel.send_file(ctx.channel, f)
 
     @Graph.error
     def Graph_error(self, ctx, error):
-        await ctx.send(error + ": \n\nエラー内容\n\n" + error.text)
+        await ctx.channel.send(error + ": \n\nエラー内容\n\n" + error.text)
 
 
 # このクラスをMainクラスで呼び出すとこの関数を呼び出す

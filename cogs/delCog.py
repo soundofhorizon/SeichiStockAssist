@@ -18,7 +18,7 @@ class DelCog(commands.Cog):
 
     @Delete.error
     def Delete_error(self, ctx, error):
-        await ctx.send(error + ": \n\nエラー内容\n\n" + error.text)
+        await ctx.channel.send(error + ": \n\nエラー内容\n\n" + error.text)
 
 
 # このクラスをMainクラスで呼び出すとこの関数を呼び出す
