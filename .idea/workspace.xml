@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0e7daa25-66e6-4299-831a-8b1e78fef8b0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cogs/graphCog.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/graphCog.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,7 +145,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583944874608</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="[ADD]グラフを表示できるようにする">
+      <created>1583960348502</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1583960348502</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -176,13 +182,14 @@
     <MESSAGE value="[FIX]guildが複数あるわけがない。" />
     <MESSAGE value="[FIX]スペルミス。" />
     <MESSAGE value="[FIX]EventHanderの場合においてはtry-exceptでエラー対処" />
-    <option name="LAST_COMMIT_MESSAGE" value="[FIX]EventHanderの場合においてはtry-exceptでエラー対処" />
+    <MESSAGE value="[ADD]グラフを表示できるようにする" />
+    <option name="LAST_COMMIT_MESSAGE" value="[ADD]グラフを表示できるようにする" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="229" y="195" key="CommitChangelistDialog2" timestamp="1583960300966">
+    <state x="229" y="195" key="CommitChangelistDialog2" timestamp="1583960347908">
       <screen x="0" y="0" width="1600" height="1200" />
     </state>
-    <state x="229" y="195" key="CommitChangelistDialog2/0.0.1600.1200@0.0.1600.1200" timestamp="1583960300966" />
+    <state x="229" y="195" key="CommitChangelistDialog2/0.0.1600.1200@0.0.1600.1200" timestamp="1583960347908" />
     <state x="474" y="425" key="com.intellij.ide.util.TipDialog" timestamp="1583959640769">
       <screen x="0" y="0" width="1600" height="1200" />
     </state>

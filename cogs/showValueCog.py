@@ -11,7 +11,6 @@ class ShowValueCog(commands.Cog):
 
     @commands.command(name="showValue")
     def ShowValue(self, ctx, num):
-        channel = ctx.get_channel(643461625663193098)
 
         # sympyを用いてみる。変数を定義したら後は方程式などが作れる。代入も可能。計算してくれるので使いやすいのでは？
         # 策定事項：sympyの方程式を定義する際は「expr_(変数名)」を用いる。変数には_valueを語尾につけてみる。(変更してもよい)
@@ -28,7 +27,7 @@ class ShowValueCog(commands.Cog):
             embed = discord.Embed(title='value_view',
                                   description=f'椎名の現在の価値は{value}です。',
                                   color=0xadff2f)
-            await channel.send(embed=embed)
+            await ctx.send(embed=embed)
 
 
 # このクラスをMainクラスで呼び出すとこの関数を呼び出す
