@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0e7daa25-66e6-4299-831a-8b1e78fef8b0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/cogs/checkMCIDCog.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cogs/delCog.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cogs/graphCog.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cogs/inoutCog.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cogs/logCog.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cogs/showValueCog.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeichiStockAssist.py" beforeDir="false" afterPath="$PROJECT_DIR$/seichiStockAssist.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seichiStockAssist.py" beforeDir="false" afterPath="$PROJECT_DIR$/seichiStockAssist.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +90,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583927417480</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="[REFACTOR]Cog化する">
+      <created>1583938070479</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1583938070479</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -119,16 +119,21 @@
     <MESSAGE value="[FIX]requirement.txtにsumpyを追加する。" />
     <MESSAGE value="[FIX]M_valueを変化させることで椎名の価値を変化させるようにする。Debugとして!showValue 数字　で倍率を定められるコマンドを実装" />
     <MESSAGE value="[ADD]matplotlibを触ってみよう" />
-    <option name="LAST_COMMIT_MESSAGE" value="[ADD]matplotlibを触ってみよう" />
+    <MESSAGE value="[REFACTOR]Cog化する" />
+    <option name="LAST_COMMIT_MESSAGE" value="[REFACTOR]Cog化する" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="229" y="195" key="CommitChangelistDialog2" timestamp="1583927416993">
+    <state x="229" y="195" key="CommitChangelistDialog2" timestamp="1583938069887">
       <screen x="0" y="0" width="1600" height="1200" />
     </state>
-    <state x="229" y="195" key="CommitChangelistDialog2/0.0.1600.1200@0.0.1600.1200" timestamp="1583927416993" />
+    <state x="229" y="195" key="CommitChangelistDialog2/0.0.1600.1200@0.0.1600.1200" timestamp="1583938069887" />
     <state x="609" y="518" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1583930047233">
       <screen x="0" y="0" width="1600" height="1200" />
     </state>
     <state x="609" y="518" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1600.1200@0.0.1600.1200" timestamp="1583930047233" />
+    <state x="466" y="332" width="667" height="536" key="find.popup" timestamp="1583939507512">
+      <screen x="0" y="0" width="1600" height="1200" />
+    </state>
+    <state x="466" y="332" width="667" height="536" key="find.popup/0.0.1600.1200@0.0.1600.1200" timestamp="1583939507512" />
   </component>
 </project>
