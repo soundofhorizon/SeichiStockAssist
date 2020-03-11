@@ -9,7 +9,7 @@ class DelCog(commands.Cog):
         self.bot = bot
 
     @commands.command(name="del")
-    @commands.has_permissions(manage_guilds=True)  # これでOK
+    @commands.has_permissions(manage_guild=True)  # これでOK
     async def delete(self, ctx, num):
         kazu = int(num)
         await ctx.channel.purge(limit=kazu + 1)
