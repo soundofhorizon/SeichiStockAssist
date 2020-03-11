@@ -9,9 +9,9 @@ class ShowValueCog(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
-    @commands.command(name="showValue")  # ctxを渡しておかないと引数をnumに入れられない。
+    @commands.command(name="showValue")
     def ShowValue(self, ctx, num):
-        channel = self.bot.get_channel(643461625663193098)
+        channel = ctx.get_channel(643461625663193098)
 
         # sympyを用いてみる。変数を定義したら後は方程式などが作れる。代入も可能。計算してくれるので使いやすいのでは？
         # 策定事項：sympyの方程式を定義する際は「expr_(変数名)」を用いる。変数には_valueを語尾につけてみる。(変更してもよい)
