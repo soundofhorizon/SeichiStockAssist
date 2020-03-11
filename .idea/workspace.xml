@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0e7daa25-66e6-4299-831a-8b1e78fef8b0" name="Default Changelist" comment="[FIX]guildが複数あるわけがない。">
+    <list default="true" id="0e7daa25-66e6-4299-831a-8b1e78fef8b0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cogs/delCog.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/delCog.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cogs/checkMCIDCog.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/checkMCIDCog.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cogs/logCog.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/logCog.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,7 +133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583943579527</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="[FIX]スペルミス。">
+      <created>1583943938036</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1583943938036</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -160,13 +168,14 @@
     <MESSAGE value="[FIX]デスマーチ(ファイル名に合わせる)" />
     <MESSAGE value="[FIX]デスマーチ(おいProcfileな人生であった)" />
     <MESSAGE value="[FIX]guildが複数あるわけがない。" />
-    <option name="LAST_COMMIT_MESSAGE" value="[FIX]guildが複数あるわけがない。" />
+    <MESSAGE value="[FIX]スペルミス。" />
+    <option name="LAST_COMMIT_MESSAGE" value="[FIX]スペルミス。" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="229" y="195" key="CommitChangelistDialog2" timestamp="1583943782642">
+    <state x="229" y="195" key="CommitChangelistDialog2" timestamp="1583943937653">
       <screen x="0" y="0" width="1600" height="1200" />
     </state>
-    <state x="229" y="195" key="CommitChangelistDialog2/0.0.1600.1200@0.0.1600.1200" timestamp="1583943782642" />
+    <state x="229" y="195" key="CommitChangelistDialog2/0.0.1600.1200@0.0.1600.1200" timestamp="1583943937653" />
     <state x="609" y="518" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1583930047233">
       <screen x="0" y="0" width="1600" height="1200" />
     </state>
@@ -175,5 +184,9 @@
       <screen x="0" y="0" width="1600" height="1200" />
     </state>
     <state x="466" y="332" width="667" height="536" key="find.popup/0.0.1600.1200@0.0.1600.1200" timestamp="1583943850719" />
+    <state x="456" y="280" key="run.anything.popup" timestamp="1583944279017">
+      <screen x="0" y="0" width="1600" height="1200" />
+    </state>
+    <state x="456" y="280" key="run.anything.popup/0.0.1600.1200@0.0.1600.1200" timestamp="1583944279017" />
   </component>
 </project>
