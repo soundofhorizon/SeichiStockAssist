@@ -1,1 +1,1 @@
-worker: python SeichiStockAssist.py
+worker: python seichiStockAssist.py

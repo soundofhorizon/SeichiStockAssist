@@ -72,6 +72,6 @@ class SeichiStockAssist(commands.Bot):
             await ctx.send("Sorry! 予期せぬエラーが発生しました。")
 
 
-if __name__ == '__SeichiStockAssist__':
+if __name__ == '__main__':
     bot = SeichiStockAssist(command_prefix='!')
     bot.run(bot_token)
