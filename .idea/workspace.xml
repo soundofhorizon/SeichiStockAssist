@@ -27,6 +27,9 @@
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1TbwYnzWbGUQQlXO1xqy9HzDJJN" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -195,7 +198,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583985053060</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="[ADD]tmpを生やす">
+      <created>1583985273300</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1583985273300</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -212,6 +222,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="[FIX]URLのeditを無視&amp;時間のフォーマットを何とかする" />
     <MESSAGE value="[ADD]Redisの初期設定。(Heroku Redisを使用可能にしています)" />
     <MESSAGE value="[FIX]requirement.txtにsumpyを追加する。" />
@@ -231,13 +242,14 @@
     <MESSAGE value="[FIX]エラー修正" />
     <MESSAGE value="[FIX]asyncつける" />
     <MESSAGE value="[FIX]これで動く？" />
-    <option name="LAST_COMMIT_MESSAGE" value="[FIX]これで動く？" />
+    <MESSAGE value="[ADD]tmpを生やす" />
+    <option name="LAST_COMMIT_MESSAGE" value="[ADD]tmpを生やす" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="229" y="195" key="CommitChangelistDialog2" timestamp="1583985197652">
+    <state x="229" y="195" key="CommitChangelistDialog2" timestamp="1583985272811">
       <screen x="0" y="0" width="1600" height="1200" />
     </state>
-    <state x="229" y="195" key="CommitChangelistDialog2/0.0.1600.1200@0.0.1600.1200" timestamp="1583985197652" />
+    <state x="229" y="195" key="CommitChangelistDialog2/0.0.1600.1200@0.0.1600.1200" timestamp="1583985272811" />
     <state x="474" y="425" key="com.intellij.ide.util.TipDialog" timestamp="1583984103414">
       <screen x="0" y="0" width="1600" height="1200" />
     </state>
