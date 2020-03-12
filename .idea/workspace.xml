@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0e7daa25-66e6-4299-831a-8b1e78fef8b0" name="Default Changelist" comment="">
+    <list default="true" id="0e7daa25-66e6-4299-831a-8b1e78fef8b0" name="Default Changelist" comment="[FIX]requirements更新">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -205,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583985273300</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="[FIX]関数を分ける">
+      <created>1583985579664</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1583985579664</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -243,13 +251,15 @@
     <MESSAGE value="[FIX]asyncつける" />
     <MESSAGE value="[FIX]これで動く？" />
     <MESSAGE value="[ADD]tmpを生やす" />
-    <option name="LAST_COMMIT_MESSAGE" value="[ADD]tmpを生やす" />
+    <MESSAGE value="[FIX]関数を分ける" />
+    <MESSAGE value="[FIX]requirements更新" />
+    <option name="LAST_COMMIT_MESSAGE" value="[FIX]requirements更新" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="229" y="195" key="CommitChangelistDialog2" timestamp="1583985272811">
+    <state x="229" y="195" key="CommitChangelistDialog2" timestamp="1583986497709">
       <screen x="0" y="0" width="1600" height="1200" />
     </state>
-    <state x="229" y="195" key="CommitChangelistDialog2/0.0.1600.1200@0.0.1600.1200" timestamp="1583985272811" />
+    <state x="229" y="195" key="CommitChangelistDialog2/0.0.1600.1200@0.0.1600.1200" timestamp="1583986497709" />
     <state x="474" y="425" key="com.intellij.ide.util.TipDialog" timestamp="1583984103414">
       <screen x="0" y="0" width="1600" height="1200" />
     </state>
@@ -266,5 +276,9 @@
       <screen x="0" y="0" width="1600" height="1200" />
     </state>
     <state x="456" y="280" key="run.anything.popup/0.0.1600.1200@0.0.1600.1200" timestamp="1583944279017" />
+    <state x="522" y="513" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1583986364205">
+      <screen x="0" y="0" width="1600" height="1200" />
+    </state>
+    <state x="522" y="513" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.1600.1200@0.0.1600.1200" timestamp="1583986364205" />
   </component>
 </project>
